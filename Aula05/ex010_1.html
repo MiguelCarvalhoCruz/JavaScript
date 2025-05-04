@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <label for="ipais">Digite seu pais de origem:</label>
+    <input type="text" name="pais" id="ipais">
+    <input type="button" value="validar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+
+        function verificar() {
+
+            var txtpais = window.document.getElementById('ipais')
+            var res = window.document.getElementById('res')
+
+            res.innerHTML = `<p>Seu pais de origem é ${txtpais.value}</p>`
+
+            if (txtpais.value == 'Brasil') {
+
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            } else {
+
+                res.innerHTML += `<p>Você é Estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
