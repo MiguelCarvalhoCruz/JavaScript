@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculo de idade</h1>
+    </header>
+
+    <main>
+        <section>
+           <p>
+                <label for="txtnas">Digite o ano do seu nascimento:</label>
+                <input type="number" name="nascimento" id="txtnas">
+
+           </p>
+
+           <p>
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+           </p>
+
+           <p>
+                <input type="button" value="Calcular idade" onclick="calcular()">
+           </p>
+        </section>
+
+        <section id="res">
+            
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <p>Site criado por Miguel</p>
+    </footer>
+
+    <script src="ambiente.js"></script>
+</body>
+</html>
